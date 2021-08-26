@@ -4,8 +4,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.JFrame;
 
 public class Nine implements ActionListener {
+  int count;
   public void actionPerformed(ActionEvent e) {
-    System.out.println("Ouch!"); 
+    System.out.println(count++); 
   }
   public static void main(String[] args) {
     JFrame a = new JFrame(); 
