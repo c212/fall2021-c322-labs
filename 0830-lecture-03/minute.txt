@@ -1,0 +1,24 @@
+What is an iterator? 
+Give some examples.
+What is a Binary Search Tree (BST)? 
+https://www.cs.usfca.edu/~galles/visualization/BST.html
+What does an iterator do for a BST? 
+
+Start with an empty BST and then insert 5, 9, 4, 13, 6. 
+
+What order would you get from an iterator on the tree? 
+Teresa: 4 5 13 6 9     ad-hoc 
+Daniel: 5 4 13 9 6 <-- breadth-first 
+Liz:    5 4 13 9 6     depth-first 
+Cam:                   in order 
+
+def in-order(tree): 
+  if tree is null: stop
+  else: 
+    in-order(tree.left)
+    print tree.value
+    in-order(tree.right) 
+
+4 5 6 9 13 
+
+--
